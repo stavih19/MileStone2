@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread -g   CMakeFiles/Milestone2.dir/MyserialServer.cpp.o CMakeFiles/Milestone2.dir/MyTestClientHandler.cpp.o CMakeFiles/Milestone2.dir/StringReverser.cpp.o CMakeFiles/Milestone2.dir/FileCacheManager.cpp.o CMakeFiles/Milestone2.dir/main.cpp.o  -o Milestone2 
