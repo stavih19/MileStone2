@@ -54,6 +54,7 @@ vector<string> FileCacheManager::split(const string &str, const string &sep) {
     char *current;
     std::vector<std::string> arr;
     current = strtok(cstr, sep.c_str());
+
     while (current != nullptr) {
         arr.push_back(current);
         current = strtok(nullptr, sep.c_str());
