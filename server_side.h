@@ -29,9 +29,8 @@ using namespace std;
 #include "ClientHandler.h"
 
 namespace server_side {
-    template<class P, class S>
     class Server {
-        virtual void start(int port, ClientHandler<S, P> *c) = 0;
+        virtual void start(int port, ClientHandler *c) = 0;
 
         virtual void stop() = 0;
     };

@@ -8,7 +8,7 @@ using namespace boot;
 
 int main(int argc, const char *args[]) {
 
-    boot::Main<string, string>::main(argc, args);
+    boot::Main::main(argc, args);
 
     this_thread::sleep_for(chrono::milliseconds(120000));
 

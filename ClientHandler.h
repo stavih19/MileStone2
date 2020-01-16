@@ -12,7 +12,6 @@
 
 using namespace std;
 
-template<class P, class S>
 class ClientHandler {
 protected:
     CacheManager<string, string> *cacheManager{};

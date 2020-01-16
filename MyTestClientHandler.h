@@ -9,7 +9,7 @@
 #include "StringReverser.h"
 #include "FileCacheManager.h"
 
-class MyTestClientHandler : public ClientHandler<string, string> {
+class MyTestClientHandler : public ClientHandler {
 public:
     MyTestClientHandler() {
         cacheManager = new FileCacheManager();

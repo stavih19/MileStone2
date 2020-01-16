@@ -5,8 +5,7 @@
 #include "MyserialServer.h"
 #include <sys/time.h>
 
-template<class P, class S>
-void MyserialServer<P, S>::start(int port, ClientHandler<P, S> *c) {
+void MyserialServer::start(int port, ClientHandler *c) {
     mainFlag = 1;
 
     MyserialServer MS;
@@ -14,13 +13,11 @@ void MyserialServer<P, S>::start(int port, ClientHandler<P, S> *c) {
     getSocket.detach();
 }
 
-template<class P, class S>
-void MyserialServer<P, S>::stop() {
+void MyserialServer::stop() {
     mainFlag = 0;
 }
 
-template<class P, class S>
-int MyserialServer<P, S>::returnSocket(int port) {
+int MyserialServer::returnSocket(int port) {
     // open the server socket
     sockaddr_in addressServer{};
 
@@ -59,8 +56,7 @@ int MyserialServer<P, S>::returnSocket(int port) {
     return isClientSocket;
 }
 
-template<class P, class S>
-void MyserialServer<P, S>::runServer(int port, ClientHandler<P, S> *c) {
+void MyserialServer::runServer(int port, ClientHandler *c) {
     int data;
     char buffer[1024] = {0};
     string output;
