@@ -39,7 +39,6 @@ string FileCacheManager::getSolution(string problem) {
 
 void FileCacheManager::saveSolution(string problem, string solution) {
     string input;
-    pair<string, string> temp;
 
     ofstream fp(diskName);
     if (!fp.is_open()) { exit(1); }
