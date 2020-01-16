@@ -31,7 +31,6 @@ using namespace std;
 namespace server_side {
     class Server {
         virtual void start(int port, ClientHandler *c) = 0;
-
         virtual void stop() = 0;
     };
 }
