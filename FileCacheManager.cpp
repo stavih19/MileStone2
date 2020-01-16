@@ -59,5 +59,6 @@ vector<string> FileCacheManager::split(const string &str, const string &sep) {
         arr.push_back(current);
         current = strtok(nullptr, sep.c_str());
     }
+
     return arr;
 }
