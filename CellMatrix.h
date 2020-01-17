@@ -2,23 +2,23 @@
 // Created by stavih19 on 17/01/2020.
 //
 
-#ifndef MILESTONE2_POINTMATRIX_H
-#define MILESTONE2_POINTMATRIX_H
+#ifndef MILESTONE2_CELLMATRIX_H
+#define MILESTONE2_CELLMATRIX_H
 
 #include "State.h"
 
-class PointMatrix {
+class CellMatrix {
 private:
     int i, j;
     double weight;
 public:
-    PointMatrix() {
+    CellMatrix() {
         i = -1;
         j = -1;
         weight = -1;
     }
 
-    PointMatrix(int iN, int jN, double weightN) : i(iN), j(jN), weight(weightN) {}
+    CellMatrix(int iN, int jN, double weightN) : i(iN), j(jN), weight(weightN) {}
 
     void setI(int iN) { i = iN; }
 
@@ -33,5 +33,4 @@ public:
     double getWeight() { return weight; }
 };
 
-
-#endif //MILESTONE2_POINTMATRIX_H
+#endif //MILESTONE2_CELLMATRIX_H

@@ -7,58 +7,58 @@
 
 #include <utility>
 #include "Searchable.h"
-#include "PointMatrix.h"
+#include "CellMatrix.h"
 
-class Matrix : public Searchable<PointMatrix> {
+class Matrix : public Searchable<CellMatrix> {
 private:
     int n{}, m{};
-    vector<vector<PointMatrix>> matrix;
+    vector<vector<CellMatrix*>> matrix;
 
-    PointMatrix *convertHashToPoint(int hash);
+    CellMatrix *convertHashToPoint(int hash);
 
-    double convertPointToHash(PointMatrix point);
+    double convertPointToHash(CellMatrix point);
 
-    bool isUpWall(PointMatrix point) {
+    bool isUpWall(CellMatrix point) {
         if (point.getI() != 0) {
             return !isWall(point);
         }
         return false;
     }
 
-    bool isRightWall(PointMatrix point) {
+    bool isRightWall(CellMatrix point) {
         if (point.getJ() != m) {
             return !isWall(point);
         }
         return false;
     }
 
-    bool isDownWall(PointMatrix point) {
+    bool isDownWall(CellMatrix point) {
         if (point.getI() != n) {
             return !isWall(point);
         }
         return false;
     }
 
-    bool isLeftWall(PointMatrix point) {
+    bool isLeftWall(CellMatrix point) {
         if (point.getJ() != 0) {
             return !isWall(point);
         }
         return false;
     }
 
-    bool isWall(PointMatrix point);
+    bool isWall(CellMatrix point);
 public:
-    Matrix(vector<vector<PointMatrix>> matrixN, int n, int m) {
+    Matrix(vector<vector<CellMatrix*>> matrixN) {
         matrix = std::move(matrixN);
         n = matrix.size();
         m = matrix.at(0).size();
     }
 
-    State<PointMatrix> getInitialState() override;
+    State<CellMatrix> getInitialState() override;
 
-    State<PointMatrix> getGoalState() override;
+    State<CellMatrix> getGoalState() override;
 
-    list<State<struct PointMatrix>> getAllPossibleState(State<PointMatrix> state) override;
+    list<State<struct CellMatrix>> getAllPossibleState(State<CellMatrix> state) override;
 };
 
 

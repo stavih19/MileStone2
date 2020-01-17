@@ -258,33 +258,6 @@ MyserialServer.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MyserialServer.cpp.s
 .PHONY : MyserialServer.cpp.s
 
-PointMatrix.o: PointMatrix.cpp.o
-
-.PHONY : PointMatrix.o
-
-# target to build an object file
-PointMatrix.cpp.o:
-	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PointMatrix.cpp.o
-.PHONY : PointMatrix.cpp.o
-
-PointMatrix.i: PointMatrix.cpp.i
-
-.PHONY : PointMatrix.i
-
-# target to preprocess a source file
-PointMatrix.cpp.i:
-	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PointMatrix.cpp.i
-.PHONY : PointMatrix.cpp.i
-
-PointMatrix.s: PointMatrix.cpp.s
-
-.PHONY : PointMatrix.s
-
-# target to generate assembly for a file
-PointMatrix.cpp.s:
-	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PointMatrix.cpp.s
-.PHONY : PointMatrix.cpp.s
-
 StringReverser.o: StringReverser.cpp.o
 
 .PHONY : StringReverser.o
@@ -363,9 +336,6 @@ help:
 	@echo "... MyserialServer.o"
 	@echo "... MyserialServer.i"
 	@echo "... MyserialServer.s"
-	@echo "... PointMatrix.o"
-	@echo "... PointMatrix.i"
-	@echo "... PointMatrix.s"
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"

@@ -18,6 +18,10 @@ algorithm
 Searcher.h
 /home/stavih19/CLionProjects/Milestone2/Searcher.h
 
+/home/stavih19/CLionProjects/Milestone2/CellMatrix.h
+State.h
+/home/stavih19/CLionProjects/Milestone2/State.h
+
 /home/stavih19/CLionProjects/Milestone2/FileCacheManager.h
 ServersInterfaces/CacheManager.h
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/CacheManager.h
@@ -31,8 +35,8 @@ utility
 -
 Searchable.h
 /home/stavih19/CLionProjects/Milestone2/Searchable.h
-PointMatrix.h
-/home/stavih19/CLionProjects/Milestone2/PointMatrix.h
+CellMatrix.h
+/home/stavih19/CLionProjects/Milestone2/CellMatrix.h
 
 /home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.h
 ServersInterfaces/ClientHandler.h
@@ -47,14 +51,6 @@ ServersInterfaces/server_side.h
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/server_side.h
 ServersInterfaces/ClientHandler.h
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/ClientHandler.h
-
-/home/stavih19/CLionProjects/Milestone2/PointMatrix.cpp
-PointMatrix.h
-/home/stavih19/CLionProjects/Milestone2/PointMatrix.h
-
-/home/stavih19/CLionProjects/Milestone2/PointMatrix.h
-State.h
-/home/stavih19/CLionProjects/Milestone2/State.h
 
 /home/stavih19/CLionProjects/Milestone2/Searchable.h
 string
@@ -155,12 +151,12 @@ string
 /home/stavih19/CLionProjects/Milestone2/main.cpp
 ServersInterfaces/boot.h
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/boot.h
-Searcher.h
-/home/stavih19/CLionProjects/Milestone2/Searcher.h
-Matrix.h
-/home/stavih19/CLionProjects/Milestone2/Matrix.h
-PointMatrix.h
-/home/stavih19/CLionProjects/Milestone2/PointMatrix.h
+CellMatrix.h
+/home/stavih19/CLionProjects/Milestone2/CellMatrix.h
 BestFirstSearch.h
 /home/stavih19/CLionProjects/Milestone2/BestFirstSearch.h
+Matrix.h
+/home/stavih19/CLionProjects/Milestone2/Matrix.h
+time.h
+-
 

@@ -11,9 +11,9 @@ CMakeFiles/Milestone2.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
 CMakeFiles/Milestone2.dir/FileCacheManager.cpp.o: ../FileCacheManager.h
 CMakeFiles/Milestone2.dir/FileCacheManager.cpp.o: ../ServersInterfaces/CacheManager.h
 
+CMakeFiles/Milestone2.dir/Matrix.cpp.o: ../CellMatrix.h
 CMakeFiles/Milestone2.dir/Matrix.cpp.o: ../Matrix.cpp
 CMakeFiles/Milestone2.dir/Matrix.cpp.o: ../Matrix.h
-CMakeFiles/Milestone2.dir/Matrix.cpp.o: ../PointMatrix.h
 CMakeFiles/Milestone2.dir/Matrix.cpp.o: ../Searchable.h
 CMakeFiles/Milestone2.dir/Matrix.cpp.o: ../State.h
 
@@ -32,20 +32,16 @@ CMakeFiles/Milestone2.dir/MyserialServer.cpp.o: ../ServersInterfaces/ClientHandl
 CMakeFiles/Milestone2.dir/MyserialServer.cpp.o: ../ServersInterfaces/Solver.h
 CMakeFiles/Milestone2.dir/MyserialServer.cpp.o: ../ServersInterfaces/server_side.h
 
-CMakeFiles/Milestone2.dir/PointMatrix.cpp.o: ../PointMatrix.cpp
-CMakeFiles/Milestone2.dir/PointMatrix.cpp.o: ../PointMatrix.h
-CMakeFiles/Milestone2.dir/PointMatrix.cpp.o: ../State.h
-
 CMakeFiles/Milestone2.dir/StringReverser.cpp.o: ../ServersInterfaces/Solver.h
 CMakeFiles/Milestone2.dir/StringReverser.cpp.o: ../StringReverser.cpp
 CMakeFiles/Milestone2.dir/StringReverser.cpp.o: ../StringReverser.h
 
 CMakeFiles/Milestone2.dir/main.cpp.o: ../BestFirstSearch.h
+CMakeFiles/Milestone2.dir/main.cpp.o: ../CellMatrix.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../FileCacheManager.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../Matrix.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../MyserialServer.h
-CMakeFiles/Milestone2.dir/main.cpp.o: ../PointMatrix.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../Searchable.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../Searcher.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../ServersInterfaces/CacheManager.h

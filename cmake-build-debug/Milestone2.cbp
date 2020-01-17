@@ -90,6 +90,9 @@
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/BestFirstSearch.h">
 			<Option target="Milestone2"/>
 		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/CellMatrix.h">
+			<Option target="Milestone2"/>
+		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/FileCacheManager.cpp">
 			<Option target="Milestone2"/>
 		</Unit>
@@ -112,12 +115,6 @@
 			<Option target="Milestone2"/>
 		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MyserialServer.h">
-			<Option target="Milestone2"/>
-		</Unit>
-		<Unit filename="/home/stavih19/CLionProjects/Milestone2/PointMatrix.cpp">
-			<Option target="Milestone2"/>
-		</Unit>
-		<Unit filename="/home/stavih19/CLionProjects/Milestone2/PointMatrix.h">
 			<Option target="Milestone2"/>
 		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/Searchable.h">
