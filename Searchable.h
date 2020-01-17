@@ -21,20 +21,5 @@ class Searchable {
     list<State<T>> getAllPossibleState(State<T> state);
 };
 
-template<class T>
-State<T> Searchable<T>::getInitialState() {
-    return State<T>(T());
-}
-
-template<class T>
-State<T> Searchable<T>::getGoalState() {
-    return State<T>(T());
-}
-
-template<class T>
-list<State<T>> Searchable<T>::getAllPossibleState(State<T> state) {
-    return list<State<T>>();
-}
-
 
 #endif //MILESTONE2_SEARCHABLE_H

@@ -6,8 +6,8 @@
 #define MILESTONE2_BOOT_H
 
 #include <string>
-#include "MyserialServer.h"
-#include "MyTestClientHandler.h"
+#include "../MyserialServer.h"
+#include "../MyTestClientHandler.h"
 
 namespace boot {
 

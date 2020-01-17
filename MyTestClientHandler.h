@@ -5,7 +5,7 @@
 #ifndef MILESTONE2_MYTESTCLIENTHANDLER_H
 #define MILESTONE2_MYTESTCLIENTHANDLER_H
 
-#include "ClientHandler.h"
+#include "ServersInterfaces/ClientHandler.h"
 #include "StringReverser.h"
 #include "FileCacheManager.h"
 
