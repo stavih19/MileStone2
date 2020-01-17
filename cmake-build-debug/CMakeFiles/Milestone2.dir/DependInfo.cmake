@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/stavih19/CLionProjects/Milestone2/BasicState.cpp" "/home/stavih19/CLionProjects/Milestone2/cmake-build-debug/CMakeFiles/Milestone2.dir/BasicState.cpp.o"
   "/home/stavih19/CLionProjects/Milestone2/FileCacheManager.cpp" "/home/stavih19/CLionProjects/Milestone2/cmake-build-debug/CMakeFiles/Milestone2.dir/FileCacheManager.cpp.o"
   "/home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.cpp" "/home/stavih19/CLionProjects/Milestone2/cmake-build-debug/CMakeFiles/Milestone2.dir/MyTestClientHandler.cpp.o"
   "/home/stavih19/CLionProjects/Milestone2/MyserialServer.cpp" "/home/stavih19/CLionProjects/Milestone2/cmake-build-debug/CMakeFiles/Milestone2.dir/MyserialServer.cpp.o"

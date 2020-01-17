@@ -7,14 +7,22 @@
 
 template<class T>
 class State {
-private:
+protected:
     T state;
     double cost{};
     State<T> *cameFrom;
+
+    int test;
 public:
     State(T stateN) : state(stateN), cameFrom(nullptr) {}
 
-    virtual bool equal(State<T> other) = 0;
+    virtual void set(State<T> *cameFromN) {
+        cameFrom = cameFromN;
+    }
+
+    virtual bool equal(State<T> *other) {
+
+    }
 };
 
 #endif //MILESTONE2_STATE_H

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Milestone2.dir/BasicState.cpp.o"
   "CMakeFiles/Milestone2.dir/FileCacheManager.cpp.o"
   "CMakeFiles/Milestone2.dir/MyTestClientHandler.cpp.o"
   "CMakeFiles/Milestone2.dir/MyserialServer.cpp.o"

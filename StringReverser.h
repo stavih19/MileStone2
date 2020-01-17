@@ -5,7 +5,7 @@
 #ifndef MILESTONE2_STRINGREVERSER_H
 #define MILESTONE2_STRINGREVERSER_H
 
-#include "Solver.h"
+#include "ServersInterfaces/Solver.h"
 #include <string>
 
 using namespace std;

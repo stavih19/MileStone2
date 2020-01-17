@@ -6,25 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/stavih19/CLionProjects/Milestone2/CacheManager.h
-string
+/home/stavih19/CLionProjects/Milestone2/FileCacheManager.cpp
+fstream
 -
-unordered_map
--
-
-/home/stavih19/CLionProjects/Milestone2/ClientHandler.h
-string
--
-CacheManager.h
-/home/stavih19/CLionProjects/Milestone2/CacheManager.h
-Solver.h
-/home/stavih19/CLionProjects/Milestone2/Solver.h
 vector
 -
+cstring
+-
+FileCacheManager.h
+/home/stavih19/CLionProjects/Milestone2/FileCacheManager.h
 
 /home/stavih19/CLionProjects/Milestone2/FileCacheManager.h
-CacheManager.h
-/home/stavih19/CLionProjects/Milestone2/CacheManager.h
+ServersInterfaces/CacheManager.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/CacheManager.h
 
 /home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.cpp
 iostream
@@ -33,8 +27,8 @@ MyTestClientHandler.h
 /home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.h
 
 /home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.h
-ClientHandler.h
-/home/stavih19/CLionProjects/Milestone2/ClientHandler.h
+ServersInterfaces/ClientHandler.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/ClientHandler.h
 StringReverser.h
 /home/stavih19/CLionProjects/Milestone2/StringReverser.h
 FileCacheManager.h
@@ -47,38 +41,40 @@ sys/time.h
 -
 
 /home/stavih19/CLionProjects/Milestone2/MyserialServer.h
-server_side.h
-/home/stavih19/CLionProjects/Milestone2/server_side.h
-ClientHandler.h
-/home/stavih19/CLionProjects/Milestone2/ClientHandler.h
+ServersInterfaces/server_side.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/server_side.h
+ServersInterfaces/ClientHandler.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/ClientHandler.h
 
-/home/stavih19/CLionProjects/Milestone2/Solver.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/CacheManager.h
 string
 -
+unordered_map
+-
 
-/home/stavih19/CLionProjects/Milestone2/StringReverser.cpp
-StringReverser.h
-/home/stavih19/CLionProjects/Milestone2/StringReverser.h
-
-/home/stavih19/CLionProjects/Milestone2/StringReverser.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/ClientHandler.h
+string
+-
+CacheManager.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/CacheManager.h
 Solver.h
-/home/stavih19/CLionProjects/Milestone2/Solver.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/Solver.h
+vector
+-
+
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/Solver.h
 string
 -
 
-/home/stavih19/CLionProjects/Milestone2/boot.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/boot.h
 string
 -
-MyserialServer.h
+../MyserialServer.h
 /home/stavih19/CLionProjects/Milestone2/MyserialServer.h
-MyTestClientHandler.h
+../MyTestClientHandler.h
 /home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.h
 
-/home/stavih19/CLionProjects/Milestone2/main.cpp
-boot.h
-/home/stavih19/CLionProjects/Milestone2/boot.h
-
-/home/stavih19/CLionProjects/Milestone2/server_side.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/server_side.h
 string
 -
 thread
@@ -116,5 +112,19 @@ cstring
 fstream
 -
 ClientHandler.h
-/home/stavih19/CLionProjects/Milestone2/ClientHandler.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/ClientHandler.h
+
+/home/stavih19/CLionProjects/Milestone2/StringReverser.cpp
+StringReverser.h
+/home/stavih19/CLionProjects/Milestone2/StringReverser.h
+
+/home/stavih19/CLionProjects/Milestone2/StringReverser.h
+ServersInterfaces/Solver.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/Solver.h
+string
+-
+
+/home/stavih19/CLionProjects/Milestone2/main.cpp
+ServersInterfaces/boot.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/boot.h
 

@@ -5,8 +5,8 @@
 #ifndef MILESTONE2_MYSERIALSERVER_H
 #define MILESTONE2_MYSERIALSERVER_H
 
-#include "server_side.h"
-#include "ClientHandler.h"
+#include "ServersInterfaces/server_side.h"
+#include "ServersInterfaces/ClientHandler.h"
 
 using namespace server_side;
 

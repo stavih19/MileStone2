@@ -123,6 +123,33 @@ Milestone2/fast:
 	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/build
 .PHONY : Milestone2/fast
 
+BasicState.o: BasicState.cpp.o
+
+.PHONY : BasicState.o
+
+# target to build an object file
+BasicState.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BasicState.cpp.o
+.PHONY : BasicState.cpp.o
+
+BasicState.i: BasicState.cpp.i
+
+.PHONY : BasicState.i
+
+# target to preprocess a source file
+BasicState.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BasicState.cpp.i
+.PHONY : BasicState.cpp.i
+
+BasicState.s: BasicState.cpp.s
+
+.PHONY : BasicState.s
+
+# target to generate assembly for a file
+BasicState.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BasicState.cpp.s
+.PHONY : BasicState.cpp.s
+
 FileCacheManager.o: FileCacheManager.cpp.o
 
 .PHONY : FileCacheManager.o
@@ -267,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Milestone2"
 	@echo "... edit_cache"
+	@echo "... BasicState.o"
+	@echo "... BasicState.i"
+	@echo "... BasicState.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"

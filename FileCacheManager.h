@@ -5,7 +5,7 @@
 #ifndef MILESTONE2_FILECACHEMANAGER_H
 #define MILESTONE2_FILECACHEMANAGER_H
 
-#include "CacheManager.h"
+#include "ServersInterfaces/CacheManager.h"
 
 class FileCacheManager : public CacheManager<string, string> {
 private:

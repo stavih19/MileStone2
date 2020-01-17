@@ -11,10 +11,14 @@
 
 using namespace std;
 
+template<class T>
 class Searcher {
-    //vector<string> search(Searchable searchable);
+protected:
+    int numOfNodes;
+public:
+    vector<string> search(Searchable<T> searchable);
 
-    //int getNumberOfNodesEvaluated();
+    int getNumberOfNodesEvaluated();
 };
 
 #endif //MILESTONE2_SEARCHER_H

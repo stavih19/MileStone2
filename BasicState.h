@@ -5,9 +5,17 @@
 #ifndef MILESTONE2_BASICSTATE_H
 #define MILESTONE2_BASICSTATE_H
 
+#include "State.h"
 
-class BasicState {
+template<class T>
+class BasicState : public State<T> {
+    void set(State<T> *cameFromN) override {
 
+    }
+
+    virtual bool equal(State<T> other) override {
+
+    }
 };
 
 
