@@ -12,13 +12,13 @@
 
 using namespace std;
 
-template <class T>
+template<class T>
 class Searchable {
-    State<T> getInitialState();
+    virtual State<T> getInitialState() = 0;
 
-    State<T> getGoalState();
+    virtual State<T> getGoalState() = 0;
 
-    list<State<T>> getAllPossibleState(State<T> state);
+    virtual list <State<T>> getAllPossibleState(State<T> state) = 0;
 };
 
 

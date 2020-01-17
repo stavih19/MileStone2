@@ -123,32 +123,32 @@ Milestone2/fast:
 	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/build
 .PHONY : Milestone2/fast
 
-BasicState.o: BasicState.cpp.o
+BestFirstSearch.o: BestFirstSearch.cpp.o
 
-.PHONY : BasicState.o
+.PHONY : BestFirstSearch.o
 
 # target to build an object file
-BasicState.cpp.o:
-	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BasicState.cpp.o
-.PHONY : BasicState.cpp.o
+BestFirstSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.o
+.PHONY : BestFirstSearch.cpp.o
 
-BasicState.i: BasicState.cpp.i
+BestFirstSearch.i: BestFirstSearch.cpp.i
 
-.PHONY : BasicState.i
+.PHONY : BestFirstSearch.i
 
 # target to preprocess a source file
-BasicState.cpp.i:
-	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BasicState.cpp.i
-.PHONY : BasicState.cpp.i
+BestFirstSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.i
+.PHONY : BestFirstSearch.cpp.i
 
-BasicState.s: BasicState.cpp.s
+BestFirstSearch.s: BestFirstSearch.cpp.s
 
-.PHONY : BasicState.s
+.PHONY : BestFirstSearch.s
 
 # target to generate assembly for a file
-BasicState.cpp.s:
-	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BasicState.cpp.s
-.PHONY : BasicState.cpp.s
+BestFirstSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.s
+.PHONY : BestFirstSearch.cpp.s
 
 FileCacheManager.o: FileCacheManager.cpp.o
 
@@ -176,6 +176,33 @@ FileCacheManager.s: FileCacheManager.cpp.s
 FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
+
+Matrix.o: Matrix.cpp.o
+
+.PHONY : Matrix.o
+
+# target to build an object file
+Matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/Matrix.cpp.o
+.PHONY : Matrix.cpp.o
+
+Matrix.i: Matrix.cpp.i
+
+.PHONY : Matrix.i
+
+# target to preprocess a source file
+Matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
+
+Matrix.s: Matrix.cpp.s
+
+.PHONY : Matrix.s
+
+# target to generate assembly for a file
+Matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
 
 MyTestClientHandler.o: MyTestClientHandler.cpp.o
 
@@ -230,6 +257,33 @@ MyserialServer.s: MyserialServer.cpp.s
 MyserialServer.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MyserialServer.cpp.s
 .PHONY : MyserialServer.cpp.s
+
+PointMatrix.o: PointMatrix.cpp.o
+
+.PHONY : PointMatrix.o
+
+# target to build an object file
+PointMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PointMatrix.cpp.o
+.PHONY : PointMatrix.cpp.o
+
+PointMatrix.i: PointMatrix.cpp.i
+
+.PHONY : PointMatrix.i
+
+# target to preprocess a source file
+PointMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PointMatrix.cpp.i
+.PHONY : PointMatrix.cpp.i
+
+PointMatrix.s: PointMatrix.cpp.s
+
+.PHONY : PointMatrix.s
+
+# target to generate assembly for a file
+PointMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PointMatrix.cpp.s
+.PHONY : PointMatrix.cpp.s
 
 StringReverser.o: StringReverser.cpp.o
 
@@ -294,18 +348,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Milestone2"
 	@echo "... edit_cache"
-	@echo "... BasicState.o"
-	@echo "... BasicState.i"
-	@echo "... BasicState.s"
+	@echo "... BestFirstSearch.o"
+	@echo "... BestFirstSearch.i"
+	@echo "... BestFirstSearch.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
+	@echo "... Matrix.o"
+	@echo "... Matrix.i"
+	@echo "... Matrix.s"
 	@echo "... MyTestClientHandler.o"
 	@echo "... MyTestClientHandler.i"
 	@echo "... MyTestClientHandler.s"
 	@echo "... MyserialServer.o"
 	@echo "... MyserialServer.i"
 	@echo "... MyserialServer.s"
+	@echo "... PointMatrix.o"
+	@echo "... PointMatrix.i"
+	@echo "... PointMatrix.s"
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"
