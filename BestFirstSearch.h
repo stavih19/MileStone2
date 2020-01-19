@@ -6,17 +6,30 @@
 #define MILESTONE2_BESTFIRSTSEARCH_H
 
 #include "Searcher.h"
+#include "Matrix.h"
+#include "State.h"
+#include <utility>
+#include <algorithm>
+#include <queue>
 
-template<class T>
-class BestFirstSearch : public Searcher<T> {
+class BestFirstSearch : public Searcher<double> {
 private:
     int numOfNodes{};
 
-    vector<string> getPath(State<T> *goal);
+    struct Comper {
+        bool operator()(State<double> *state1, State<double> *state2) {
+            return state1->getCost() < state2->getCost();
+        }
+    };
+
+    vector<double> getPath(State<double> *goal);
 
     void increaeNumNodes();
+
+    bool isInList(State<double> *state, list<State<double> *> list);
+
 public:
-    vector<string> search(Searchable<T> searchable) override;
+    vector<double> search(Searchable<double> *searchable) override;
 
     int getNumberOfNodesEvaluated() override;
 };

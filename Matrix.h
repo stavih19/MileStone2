@@ -9,10 +9,10 @@
 #include "Searchable.h"
 #include "CellMatrix.h"
 
-class Matrix : public Searchable<CellMatrix> {
+class Matrix : public Searchable<double> {
 private:
     int n{}, m{};
-    vector<vector<CellMatrix*>> matrix;
+    vector<vector<CellMatrix *> *> *matrix;
 
     CellMatrix *convertHashToPoint(int hash);
 
@@ -26,14 +26,14 @@ private:
     }
 
     bool isRightWall(CellMatrix point) {
-        if (point.getJ() != m) {
+        if (point.getJ() != (m - 1)) {
             return !isWall(point);
         }
         return false;
     }
 
     bool isDownWall(CellMatrix point) {
-        if (point.getI() != n) {
+        if (point.getI() != (n - 1)) {
             return !isWall(point);
         }
         return false;
@@ -47,18 +47,19 @@ private:
     }
 
     bool isWall(CellMatrix point);
+
 public:
-    Matrix(vector<vector<CellMatrix*>> matrixN) {
+    Matrix(vector<vector<CellMatrix *> *> *matrixN) {
         matrix = std::move(matrixN);
-        n = matrix.size();
-        m = matrix.at(0).size();
+        n = matrix->size();
+        m = matrix->at(0)->size();
     }
 
-    State<CellMatrix> getInitialState() override;
+    State<double> *getInitialState() override;
 
-    State<CellMatrix> getGoalState() override;
+    State<double> *getGoalState() override;
 
-    list<State<struct CellMatrix>> getAllPossibleState(State<CellMatrix> state) override;
+    list<State<double> *> *getAllPossibleState(State<double> *state) override;
 };
 
 

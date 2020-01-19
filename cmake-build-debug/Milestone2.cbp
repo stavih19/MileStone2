@@ -117,6 +117,12 @@
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MyserialServer.h">
 			<Option target="Milestone2"/>
 		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/Node.h">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/PriorityQueue.h">
+			<Option target="Milestone2"/>
+		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/Searchable.h">
 			<Option target="Milestone2"/>
 		</Unit>

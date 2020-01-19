@@ -3,6 +3,8 @@
 
 CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.o: ../BestFirstSearch.cpp
 CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.o: ../BestFirstSearch.h
+CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.o: ../CellMatrix.h
+CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.o: ../Matrix.h
 CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.o: ../Searchable.h
 CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.o: ../Searcher.h
 CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.o: ../State.h

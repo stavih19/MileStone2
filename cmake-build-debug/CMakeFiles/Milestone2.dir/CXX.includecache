@@ -6,17 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/stavih19/CLionProjects/Milestone2/BestFirstSearch.cpp
-BestFirstSearch.h
-/home/stavih19/CLionProjects/Milestone2/BestFirstSearch.h
-State.h
-/home/stavih19/CLionProjects/Milestone2/State.h
-algorithm
--
-
 /home/stavih19/CLionProjects/Milestone2/BestFirstSearch.h
 Searcher.h
 /home/stavih19/CLionProjects/Milestone2/Searcher.h
+Matrix.h
+/home/stavih19/CLionProjects/Milestone2/Matrix.h
+State.h
+/home/stavih19/CLionProjects/Milestone2/State.h
+utility
+-
+algorithm
+-
+queue
+-
 
 /home/stavih19/CLionProjects/Milestone2/CellMatrix.h
 State.h
@@ -25,10 +27,6 @@ State.h
 /home/stavih19/CLionProjects/Milestone2/FileCacheManager.h
 ServersInterfaces/CacheManager.h
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/CacheManager.h
-
-/home/stavih19/CLionProjects/Milestone2/Matrix.cpp
-Matrix.h
-/home/stavih19/CLionProjects/Milestone2/Matrix.h
 
 /home/stavih19/CLionProjects/Milestone2/Matrix.h
 utility

@@ -4,55 +4,60 @@
 
 #include "Matrix.h"
 
-State<CellMatrix> Matrix::getInitialState() {
-    State<CellMatrix> firstCell = State<CellMatrix>(0, nullptr);
-    firstCell.setCost(0);
+State<double> *Matrix::getInitialState() {
+    auto *firstCell = new State<double>(1, nullptr);
+    firstCell->setCost(0);
 
     return firstCell;
 }
 
-State<CellMatrix> Matrix::getGoalState() {
-    State<CellMatrix> goalCell = State<CellMatrix>(0, nullptr);
-    goalCell.setState(n * m);
-    goalCell.setParent(nullptr);
-    goalCell.setCost(0);
+State<double> *Matrix::getGoalState() {
+    auto goalCell = new State<double>(n * m, nullptr);
+    goalCell->setCost(0);
 
     return goalCell;
 }
 
-list<State<struct CellMatrix>> Matrix::getAllPossibleState(State<CellMatrix> state) {
-    list<State<struct CellMatrix>> successors = list<State<CellMatrix>>();
+list<State<double> *> *Matrix::getAllPossibleState(State<double> *state) {
+    auto successors = new list<State<double> *>();
 
-    CellMatrix *point = convertHashToPoint(state.getState());
+    CellMatrix *point = convertHashToPoint((int)state->getState());
     if (isUpWall(*point)) { // get the upper cell
-        double newHash = state.getState() - n;
-        State<CellMatrix> temp = State<CellMatrix>(newHash, &state);
-        temp.setCost(point->getWeight());
-        successors.push_back(temp);
-    } else if (isRightWall(*point)) {
-        double newHash = state.getState() + 1;
-        State<CellMatrix> temp = State<CellMatrix>(newHash, &state);
-        temp.setCost(point->getWeight());
-        successors.push_back(temp);
-    } else if (isDownWall(*point)) {
-        double newHash = state.getState() + n;
-        State<CellMatrix> temp = State<CellMatrix>(newHash, &state);
-        temp.setCost(point->getWeight());
-        successors.push_back(temp);
-    } else if (isLeftWall(*point)) {
-        double newHash = state.getState() - 1;
-        State<CellMatrix> temp = State<CellMatrix>(newHash, &state);
-        temp.setCost(point->getWeight());
-        successors.push_back(temp);
+        double newHash = state->getState() - n;
+        auto temp = new State<double>(newHash, state);
+        CellMatrix *newPoint = convertHashToPoint((int) newHash);
+        temp->setCost(newPoint->getWeight());
+        successors->push_back(temp);
+    }
+    if (isRightWall(*point)) {
+        double newHash = state->getState() + 1;
+        auto temp = new State<double>(newHash, state);
+        CellMatrix *newPoint = convertHashToPoint((int) newHash);
+        temp->setCost(newPoint->getWeight());
+        successors->push_back(temp);
+    }
+    if (isDownWall(*point)) {
+        double newHash = state->getState() + n;
+        auto temp = new State<double>(newHash, state);
+        CellMatrix *newPoint = convertHashToPoint((int) newHash);
+        temp->setCost(newPoint->getWeight());
+        successors->push_back(temp);
+    }
+    if (isLeftWall(*point)) {
+        double newHash = state->getState() - 1;
+        auto *temp = new State<double>(newHash, state);
+        CellMatrix *newPoint = convertHashToPoint((int) newHash);
+        temp->setCost(newPoint->getWeight());
+        successors->push_back(temp);
     }
 
     return successors;
 }
 
 CellMatrix *Matrix::convertHashToPoint(int hash) {
-    int i = (hash + 1) / n;
+    int i = (hash - 1) / n;
     int j = (hash - 1) % m;
-    double weight = matrix.at(j).at(i).getWeight();
+    double weight = matrix->at(j)->at(i)->getWeight();
 
     return new CellMatrix(i, j, weight);
 }
@@ -63,8 +68,8 @@ double Matrix::convertPointToHash(CellMatrix point) {
 
 bool Matrix::isWall(CellMatrix point) {
     bool answer = false;
-    CellMatrix cell = matrix.at(point.getJ()).at(point.getI());
-    if (cell.getWeight() == -1) {
+    CellMatrix *cell = matrix->at(point.getJ())->at(point.getI());
+    if (cell->getWeight() == -1) {
         answer = true;
     }
 

@@ -12,7 +12,7 @@ using namespace std;
 template<class T>
 class State {
 protected:
-    double state;
+    T state;
     double cost{};
     State<T> *cameFrom;
 public:
