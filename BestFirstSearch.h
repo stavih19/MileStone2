@@ -18,7 +18,7 @@ private:
 
     struct Comper {
         bool operator()(State<double> *state1, State<double> *state2) {
-            return state1->getCost() < state2->getCost();
+            return state1->getCost() > state2->getCost();
         }
     };
 
@@ -26,7 +26,7 @@ private:
 
     void increaeNumNodes();
 
-    bool isInList(State<double> *state, list<State<double> *> list);
+    State<double> *getInList(State<double> *state, list<State<double> *> list);
 
 public:
     vector<double> search(Searchable<double> *searchable) override;

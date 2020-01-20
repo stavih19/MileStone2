@@ -10,13 +10,13 @@
 #include "../MyTestClientHandler.h"
 
 namespace boot {
-
+    //template<class P, class S>
     class Main {
     public:
         static void main(int argc, const char *args[]) {
-            int port = 5420; //atoi(args[1]); // 5400
+            int port = 5432; //atoi(args[1]); // 5400
 
-            MyserialServer server = MyserialServer();
+            auto server = MyserialServer();
             auto *handler = new MyTestClientHandler();
             server.start(port, handler);
         }

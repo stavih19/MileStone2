@@ -105,6 +105,18 @@
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/Matrix.h">
 			<Option target="Milestone2"/>
 		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.cpp">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.h">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MyParallelServer.cpp">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MyParallelServer.h">
+			<Option target="Milestone2"/>
+		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.cpp">
 			<Option target="Milestone2"/>
 		</Unit>
@@ -117,10 +129,10 @@
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MyserialServer.h">
 			<Option target="Milestone2"/>
 		</Unit>
-		<Unit filename="/home/stavih19/CLionProjects/Milestone2/Node.h">
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/PathInMatrix.cpp">
 			<Option target="Milestone2"/>
 		</Unit>
-		<Unit filename="/home/stavih19/CLionProjects/Milestone2/PriorityQueue.h">
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/PathInMatrix.h">
 			<Option target="Milestone2"/>
 		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/Searchable.h">

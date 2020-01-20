@@ -204,6 +204,60 @@ Matrix.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/Matrix.cpp.s
 .PHONY : Matrix.cpp.s
 
+MatrixCLientHandler.o: MatrixCLientHandler.cpp.o
+
+.PHONY : MatrixCLientHandler.o
+
+# target to build an object file
+MatrixCLientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o
+.PHONY : MatrixCLientHandler.cpp.o
+
+MatrixCLientHandler.i: MatrixCLientHandler.cpp.i
+
+.PHONY : MatrixCLientHandler.i
+
+# target to preprocess a source file
+MatrixCLientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.i
+.PHONY : MatrixCLientHandler.cpp.i
+
+MatrixCLientHandler.s: MatrixCLientHandler.cpp.s
+
+.PHONY : MatrixCLientHandler.s
+
+# target to generate assembly for a file
+MatrixCLientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.s
+.PHONY : MatrixCLientHandler.cpp.s
+
+MyParallelServer.o: MyParallelServer.cpp.o
+
+.PHONY : MyParallelServer.o
+
+# target to build an object file
+MyParallelServer.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MyParallelServer.cpp.o
+.PHONY : MyParallelServer.cpp.o
+
+MyParallelServer.i: MyParallelServer.cpp.i
+
+.PHONY : MyParallelServer.i
+
+# target to preprocess a source file
+MyParallelServer.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MyParallelServer.cpp.i
+.PHONY : MyParallelServer.cpp.i
+
+MyParallelServer.s: MyParallelServer.cpp.s
+
+.PHONY : MyParallelServer.s
+
+# target to generate assembly for a file
+MyParallelServer.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MyParallelServer.cpp.s
+.PHONY : MyParallelServer.cpp.s
+
 MyTestClientHandler.o: MyTestClientHandler.cpp.o
 
 .PHONY : MyTestClientHandler.o
@@ -257,6 +311,33 @@ MyserialServer.s: MyserialServer.cpp.s
 MyserialServer.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MyserialServer.cpp.s
 .PHONY : MyserialServer.cpp.s
+
+PathInMatrix.o: PathInMatrix.cpp.o
+
+.PHONY : PathInMatrix.o
+
+# target to build an object file
+PathInMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PathInMatrix.cpp.o
+.PHONY : PathInMatrix.cpp.o
+
+PathInMatrix.i: PathInMatrix.cpp.i
+
+.PHONY : PathInMatrix.i
+
+# target to preprocess a source file
+PathInMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PathInMatrix.cpp.i
+.PHONY : PathInMatrix.cpp.i
+
+PathInMatrix.s: PathInMatrix.cpp.s
+
+.PHONY : PathInMatrix.s
+
+# target to generate assembly for a file
+PathInMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PathInMatrix.cpp.s
+.PHONY : PathInMatrix.cpp.s
 
 StringReverser.o: StringReverser.cpp.o
 
@@ -330,12 +411,21 @@ help:
 	@echo "... Matrix.o"
 	@echo "... Matrix.i"
 	@echo "... Matrix.s"
+	@echo "... MatrixCLientHandler.o"
+	@echo "... MatrixCLientHandler.i"
+	@echo "... MatrixCLientHandler.s"
+	@echo "... MyParallelServer.o"
+	@echo "... MyParallelServer.i"
+	@echo "... MyParallelServer.s"
 	@echo "... MyTestClientHandler.o"
 	@echo "... MyTestClientHandler.i"
 	@echo "... MyTestClientHandler.s"
 	@echo "... MyserialServer.o"
 	@echo "... MyserialServer.i"
 	@echo "... MyserialServer.s"
+	@echo "... PathInMatrix.o"
+	@echo "... PathInMatrix.i"
+	@echo "... PathInMatrix.s"
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"

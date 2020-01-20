@@ -16,6 +16,7 @@ vector<double> BestFirstSearch::search(Searchable<double> *searchable) {
 
     // initial open & cloase heaps
     openList.push_back(n);
+    n->setCost(n->getCost());
     pq.push(n);
     // get into the while loop
     while (!openList.empty()) {
@@ -33,26 +34,28 @@ vector<double> BestFirstSearch::search(Searchable<double> *searchable) {
         } else {
             successors = searchable->getAllPossibleState(n);
             for (State<double> *s:*successors) {
-                increaeNumNodes();
+                //increaeNumNodes();
+                State<double> *stateInOpen = getInList(s, openList);
+                State<double> *stateInClose = getInList(s, closeHeap);
                 // in case the node is not in non of the lists
-                if ((!isInList(s, openList)) && (!isInList(s, closeHeap))) {
+                if ((stateInOpen == nullptr) && (stateInClose == nullptr)) {
                     s->setParent(n);
+                    s->setCost(s->getCost());
                     pq.push(s);
                     openList.push_back(s);
-                } else if ((s->getParent()->getCost() + s->getCost()) >
-                           (n->getCost() + s->getCost())) { // in case there is shorter path
-                    if (!isInList(s, openList)) { // in case s isnt in OPEN
+                } else if (stateInOpen != nullptr) {
+                    if (s->getParent()->getCost() + s->getCost() < stateInOpen->getCost()) {
+                        s->setCost(s->getCost());
                         pq.push(s);
                         openList.push_back(s);
-                    } else { // update its cost
-                        s->setCost(n->getCost() + s->getCost());
-                        s->setParent(n);
                     }
+                } else {
+                    s->setCost(n->getCost() + s->getCost());
+                    s->setParent(n);
                 }
             }
         }
     }
-
     answer = getPath(n);
     return answer;
 }
@@ -85,12 +88,12 @@ int BestFirstSearch::getNumberOfNodesEvaluated() {
     return numOfNodes;
 }
 
-bool BestFirstSearch::isInList(State<double> *state, list<State<double> *> list) {
-    bool answer = false;
+State<double> *BestFirstSearch::getInList(State<double> *state, list<State<double> *> list) {
+    State<double> *answer = nullptr;
 
     for (State<double> *temp:list)
         if (temp->getState() == state->getState()) {
-            answer = true;
+            answer = temp;
         }
 
     return answer;

@@ -51,8 +51,8 @@ private:
 public:
     Matrix(vector<vector<CellMatrix *> *> *matrixN) {
         matrix = std::move(matrixN);
-        n = matrix->size();
-        m = matrix->at(0)->size();
+        m = matrix->size();
+        n = matrix->at(0)->size();
     }
 
     State<double> *getInitialState() override;
@@ -60,6 +60,10 @@ public:
     State<double> *getGoalState() override;
 
     list<State<double> *> *getAllPossibleState(State<double> *state) override;
+
+    int getN() { return n; }
+
+    int getM() { return m; }
 };
 
 

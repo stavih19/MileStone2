@@ -22,10 +22,6 @@ public:
         return (state == other->state);
     }
 
-    void setState(double stateN) {
-        state = stateN;
-    }
-
     void setParent(State<T> *cameFromN) {
         cameFrom = cameFromN;
     }

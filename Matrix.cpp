@@ -57,7 +57,7 @@ list<State<double> *> *Matrix::getAllPossibleState(State<double> *state) {
 CellMatrix *Matrix::convertHashToPoint(int hash) {
     int i = (hash - 1) / n;
     int j = (hash - 1) % m;
-    double weight = matrix->at(j)->at(i)->getWeight();
+    double weight = matrix->at(i)->at(j)->getWeight();
 
     return new CellMatrix(i, j, weight);
 }
@@ -68,7 +68,7 @@ double Matrix::convertPointToHash(CellMatrix point) {
 
 bool Matrix::isWall(CellMatrix point) {
     bool answer = false;
-    CellMatrix *cell = matrix->at(point.getJ())->at(point.getI());
+    CellMatrix *cell = matrix->at(point.getI())->at(point.getJ());
     if (cell->getWeight() == -1) {
         answer = true;
     }

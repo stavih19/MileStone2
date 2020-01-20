@@ -9,9 +9,10 @@
 
 using namespace std;
 
+template <class P,class S>
 class Solver {
 public:
-    virtual string solve(string problem) = 0;
+    virtual S solve(P problem) = 0;
 };
 
 
