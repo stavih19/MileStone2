@@ -32,6 +32,13 @@ CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o
  /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/ClientHandler.h
  /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/Solver.h
  /home/stavih19/CLionProjects/Milestone2/State.h
+CMakeFiles/Milestone2.dir/MyParallelServer.cpp.o
+ /home/stavih19/CLionProjects/Milestone2/MyParallelServer.cpp
+ /home/stavih19/CLionProjects/Milestone2/MyParallelServer.h
+ /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/CacheManager.h
+ /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/ClientHandler.h
+ /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/Solver.h
+ /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/server_side.h
 CMakeFiles/Milestone2.dir/MyTestClientHandler.cpp.o
  /home/stavih19/CLionProjects/Milestone2/FileCacheManager.h
  /home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.cpp
