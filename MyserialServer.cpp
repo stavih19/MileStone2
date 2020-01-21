@@ -5,6 +5,7 @@
 #include "MyserialServer.h"
 #include <sys/time.h>
 
+//template<class P, class S>
 void MyserialServer::start(int port, ClientHandler *c) {
     mainFlag = 1;
 
@@ -13,49 +14,12 @@ void MyserialServer::start(int port, ClientHandler *c) {
     getSocket.detach();
 }
 
+//template<class P, class S>
 void MyserialServer::stop() {
-    mainFlag = 0;
+    MyserialServer::mainFlag = 0;
 }
 
-int MyserialServer::returnSocket(int port) {
-    // open the server socket
-    sockaddr_in addressServer{};
-
-    int socketServer = socket(AF_INET, SOCK_STREAM, 0);
-
-    if (socketServer == -1) {
-        cout << "Could not create a socket" << endl;
-        return -1;
-    }
-
-    addressServer.sin_family = AF_INET;
-    addressServer.sin_addr.s_addr = INADDR_ANY;
-    addressServer.sin_port = htons(port);
-    int isBind = bind(socketServer, (struct sockaddr *) &addressServer, sizeof(addressServer));
-    if (isBind == -1) {
-        cout << "Could not bind the socket to an IP" << endl;
-        return -2;
-    }
-
-    int isListen = listen(socketServer, 5);
-    if (isListen == -1) {
-        cout << "Error during listening command" << endl;
-        return -3;
-    }
-
-    struct timeval tv{};
-    tv.tv_sec = 120;
-    tv.tv_usec = 0;
-    setsockopt(socketServer, SOL_SOCKET, SO_RCVTIMEO, (const char *) &tv, sizeof(tv));
-    int isClientSocket = accept(socketServer, (struct sockaddr *) &addressServer, (socklen_t *) &addressServer);
-    if (isClientSocket == -1) {
-        cout << "Error accepting client" << endl;
-        return -4;
-    }
-
-    return isClientSocket;
-}
-
+//template<class P, class S>
 void MyserialServer::runServer(int port, ClientHandler *c) {
     int data;
     char buffer[1024] = {0};
@@ -98,5 +62,56 @@ void MyserialServer::runServer(int port, ClientHandler *c) {
         }
 
         close(socketClient);
+
     } // end while loop
+}
+
+//template<class P, class S>
+int MyserialServer::returnSocket(int port) {
+    int enable = 1;
+    int firstEnterance = 0;
+
+    // open the server socket
+    sockaddr_in addressServer{};
+
+    int socketServer = socket(AF_INET, SOCK_STREAM, 0);
+
+    if (socketServer == -1) {
+        cout << "Could not create a socket" << endl;
+        return -1;
+    }
+
+    addressServer.sin_family = AF_INET;
+    addressServer.sin_addr.s_addr = INADDR_ANY;
+    addressServer.sin_port = htons(port);
+
+    int isBind = bind(socketServer, (struct sockaddr *) &addressServer, sizeof(addressServer));
+    if (isBind == -1) {
+        //cout << "Could not bind the socket to an IP" << endl;
+        //return -3;
+        firstEnterance = 1;
+    }
+
+    if (firstEnterance && setsockopt(socketServer, SOL_SOCKET, SO_REUSEADDR, &enable, sizeof(int)) < 0) {
+        cout << "Could not bind again socket to an IP" << endl;
+        return -2;
+    }
+
+    int isListen = listen(socketServer, 5);
+    if (isListen == -1) {
+        cout << "Error during listening command" << endl;
+        return -4;
+    }
+
+    struct timeval tv{};
+    tv.tv_sec = 120;
+    tv.tv_usec = 0;
+    setsockopt(socketServer, SOL_SOCKET, SO_RCVTIMEO, (const char *) &tv, sizeof(tv));
+    int isClientSocket = accept(socketServer, (struct sockaddr *) &addressServer, (socklen_t *) &addressServer);
+    if (isClientSocket == -1) {
+        cout << "Error accepting client" << endl;
+        return -5;
+    }
+
+    return isClientSocket;
 }

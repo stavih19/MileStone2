@@ -10,9 +10,10 @@
 
 using namespace server_side;
 
-class MyserialServer : public server_side::Server {
+//template<class P, class S>
+class MyserialServer : public Server {
 private:
-    int mainFlag;
+    int mainFlag{};
 
     int returnSocket(int port);
 

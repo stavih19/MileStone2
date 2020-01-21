@@ -5,23 +5,41 @@
 #ifndef MILESTONE2_STATE_H
 #define MILESTONE2_STATE_H
 
+#include <string>
+
+using namespace std;
+
 template<class T>
 class State {
 protected:
     T state;
     double cost{};
     State<T> *cameFrom;
-
-    int test;
 public:
-    State(T stateN) : state(stateN), cameFrom(nullptr) {}
+    State(double stateN, State<T>* camefromN) : state(stateN), cameFrom(camefromN) {}
 
-    virtual void set(State<T> *cameFromN) {
+    bool equal(State<T> *other) {
+        return (state == other->state);
+    }
+
+    void setParent(State<T> *cameFromN) {
         cameFrom = cameFromN;
     }
 
-    virtual bool equal(State<T> *other) {
+    void setCost(double costN) {
+        cost = costN;
+    }
 
+    double getState() {
+        return state;
+    }
+
+    State<T> *getParent() {
+        return cameFrom;
+    }
+
+    double getCost() {
+        return cost;
     }
 };
 

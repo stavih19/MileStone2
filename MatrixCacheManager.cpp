@@ -1,14 +1,14 @@
 //
-// Created by stavih19 on 15/01/2020.
+// Created by stavih19 on 21/01/2020.
 //
 
-#include "FileCacheManager.h"
+#include "MatrixCacheManager.h"
 
-bool FileCacheManager::isSolutionExist(string problem) {
+bool MatrixCacheManager::isSolutionExist(string input) {
     string solution;
     bool answer = false;
 
-    solution = problemSolutionMap[problem];
+    solution = problemSolutionMap[input];
 
     if (!solution.empty()) {
         answer = true;
@@ -17,7 +17,7 @@ bool FileCacheManager::isSolutionExist(string problem) {
     return answer;
 }
 
-string FileCacheManager::getSolution(string problem) {
+string MatrixCacheManager::getSolution(string problem) {
     string solution, line;
     vector<string> pair;
 
@@ -34,7 +34,7 @@ string FileCacheManager::getSolution(string problem) {
     return solution;
 }
 
-void FileCacheManager::saveSolution(string problem, string solution) {
+void MatrixCacheManager::saveSolution(string problem, string solution) {
     string input;
 
     problemSolutionMap[problem] = solution;
@@ -49,7 +49,7 @@ void FileCacheManager::saveSolution(string problem, string solution) {
     }
 }
 
-vector<string> FileCacheManager::split(const string &str, const string &sep) {
+vector<string> MatrixCacheManager::split(const string &str, const string &sep) {
     char *cstr = const_cast<char *>(str.c_str());
     char *current;
     std::vector<std::string> arr;

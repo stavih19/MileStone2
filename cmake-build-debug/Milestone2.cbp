@@ -84,16 +84,43 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/stavih19/CLionProjects/Milestone2/BasicState.cpp">
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/BestFirstSearch.cpp">
 			<Option target="Milestone2"/>
 		</Unit>
-		<Unit filename="/home/stavih19/CLionProjects/Milestone2/BasicState.h">
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/BestFirstSearch.h">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/CellMatrix.h">
 			<Option target="Milestone2"/>
 		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/FileCacheManager.cpp">
 			<Option target="Milestone2"/>
 		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/FileCacheManager.h">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/Matrix.cpp">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/Matrix.h">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.cpp">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.h">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MatrixCacheManager.cpp">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MatrixCacheManager.h">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MyParallelServer.cpp">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MyParallelServer.h">
 			<Option target="Milestone2"/>
 		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.cpp">
@@ -106,6 +133,12 @@
 			<Option target="Milestone2"/>
 		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MyserialServer.h">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/PathInMatrix.cpp">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/PathInMatrix.h">
 			<Option target="Milestone2"/>
 		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/Searchable.h">

@@ -6,6 +6,9 @@
 #define MILESTONE2_FILECACHEMANAGER_H
 
 #include "ServersInterfaces/CacheManager.h"
+#include <fstream>
+#include <vector>
+#include <cstring>
 
 class FileCacheManager : public CacheManager<string, string> {
 private:

@@ -13,12 +13,9 @@ using namespace std;
 
 template<class T>
 class Searcher {
-protected:
-    int numOfNodes;
-public:
-    vector<string> search(Searchable<T> searchable);
+    virtual vector<T> search(Searchable<T>* searchable) = 0;
 
-    int getNumberOfNodesEvaluated();
+    virtual int getNumberOfNodesEvaluated() = 0;
 };
 
 #endif //MILESTONE2_SEARCHER_H

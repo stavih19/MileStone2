@@ -123,32 +123,32 @@ Milestone2/fast:
 	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/build
 .PHONY : Milestone2/fast
 
-BasicState.o: BasicState.cpp.o
+BestFirstSearch.o: BestFirstSearch.cpp.o
 
-.PHONY : BasicState.o
+.PHONY : BestFirstSearch.o
 
 # target to build an object file
-BasicState.cpp.o:
-	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BasicState.cpp.o
-.PHONY : BasicState.cpp.o
+BestFirstSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.o
+.PHONY : BestFirstSearch.cpp.o
 
-BasicState.i: BasicState.cpp.i
+BestFirstSearch.i: BestFirstSearch.cpp.i
 
-.PHONY : BasicState.i
+.PHONY : BestFirstSearch.i
 
 # target to preprocess a source file
-BasicState.cpp.i:
-	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BasicState.cpp.i
-.PHONY : BasicState.cpp.i
+BestFirstSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.i
+.PHONY : BestFirstSearch.cpp.i
 
-BasicState.s: BasicState.cpp.s
+BestFirstSearch.s: BestFirstSearch.cpp.s
 
-.PHONY : BasicState.s
+.PHONY : BestFirstSearch.s
 
 # target to generate assembly for a file
-BasicState.cpp.s:
-	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BasicState.cpp.s
-.PHONY : BasicState.cpp.s
+BestFirstSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/BestFirstSearch.cpp.s
+.PHONY : BestFirstSearch.cpp.s
 
 FileCacheManager.o: FileCacheManager.cpp.o
 
@@ -176,6 +176,114 @@ FileCacheManager.s: FileCacheManager.cpp.s
 FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
+
+Matrix.o: Matrix.cpp.o
+
+.PHONY : Matrix.o
+
+# target to build an object file
+Matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/Matrix.cpp.o
+.PHONY : Matrix.cpp.o
+
+Matrix.i: Matrix.cpp.i
+
+.PHONY : Matrix.i
+
+# target to preprocess a source file
+Matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
+
+Matrix.s: Matrix.cpp.s
+
+.PHONY : Matrix.s
+
+# target to generate assembly for a file
+Matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
+
+MatrixCLientHandler.o: MatrixCLientHandler.cpp.o
+
+.PHONY : MatrixCLientHandler.o
+
+# target to build an object file
+MatrixCLientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o
+.PHONY : MatrixCLientHandler.cpp.o
+
+MatrixCLientHandler.i: MatrixCLientHandler.cpp.i
+
+.PHONY : MatrixCLientHandler.i
+
+# target to preprocess a source file
+MatrixCLientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.i
+.PHONY : MatrixCLientHandler.cpp.i
+
+MatrixCLientHandler.s: MatrixCLientHandler.cpp.s
+
+.PHONY : MatrixCLientHandler.s
+
+# target to generate assembly for a file
+MatrixCLientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.s
+.PHONY : MatrixCLientHandler.cpp.s
+
+MatrixCacheManager.o: MatrixCacheManager.cpp.o
+
+.PHONY : MatrixCacheManager.o
+
+# target to build an object file
+MatrixCacheManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.o
+.PHONY : MatrixCacheManager.cpp.o
+
+MatrixCacheManager.i: MatrixCacheManager.cpp.i
+
+.PHONY : MatrixCacheManager.i
+
+# target to preprocess a source file
+MatrixCacheManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.i
+.PHONY : MatrixCacheManager.cpp.i
+
+MatrixCacheManager.s: MatrixCacheManager.cpp.s
+
+.PHONY : MatrixCacheManager.s
+
+# target to generate assembly for a file
+MatrixCacheManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.s
+.PHONY : MatrixCacheManager.cpp.s
+
+MyParallelServer.o: MyParallelServer.cpp.o
+
+.PHONY : MyParallelServer.o
+
+# target to build an object file
+MyParallelServer.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MyParallelServer.cpp.o
+.PHONY : MyParallelServer.cpp.o
+
+MyParallelServer.i: MyParallelServer.cpp.i
+
+.PHONY : MyParallelServer.i
+
+# target to preprocess a source file
+MyParallelServer.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MyParallelServer.cpp.i
+.PHONY : MyParallelServer.cpp.i
+
+MyParallelServer.s: MyParallelServer.cpp.s
+
+.PHONY : MyParallelServer.s
+
+# target to generate assembly for a file
+MyParallelServer.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MyParallelServer.cpp.s
+.PHONY : MyParallelServer.cpp.s
 
 MyTestClientHandler.o: MyTestClientHandler.cpp.o
 
@@ -230,6 +338,33 @@ MyserialServer.s: MyserialServer.cpp.s
 MyserialServer.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MyserialServer.cpp.s
 .PHONY : MyserialServer.cpp.s
+
+PathInMatrix.o: PathInMatrix.cpp.o
+
+.PHONY : PathInMatrix.o
+
+# target to build an object file
+PathInMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PathInMatrix.cpp.o
+.PHONY : PathInMatrix.cpp.o
+
+PathInMatrix.i: PathInMatrix.cpp.i
+
+.PHONY : PathInMatrix.i
+
+# target to preprocess a source file
+PathInMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PathInMatrix.cpp.i
+.PHONY : PathInMatrix.cpp.i
+
+PathInMatrix.s: PathInMatrix.cpp.s
+
+.PHONY : PathInMatrix.s
+
+# target to generate assembly for a file
+PathInMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/PathInMatrix.cpp.s
+.PHONY : PathInMatrix.cpp.s
 
 StringReverser.o: StringReverser.cpp.o
 
@@ -294,18 +429,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Milestone2"
 	@echo "... edit_cache"
-	@echo "... BasicState.o"
-	@echo "... BasicState.i"
-	@echo "... BasicState.s"
+	@echo "... BestFirstSearch.o"
+	@echo "... BestFirstSearch.i"
+	@echo "... BestFirstSearch.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
+	@echo "... Matrix.o"
+	@echo "... Matrix.i"
+	@echo "... Matrix.s"
+	@echo "... MatrixCLientHandler.o"
+	@echo "... MatrixCLientHandler.i"
+	@echo "... MatrixCLientHandler.s"
+	@echo "... MatrixCacheManager.o"
+	@echo "... MatrixCacheManager.i"
+	@echo "... MatrixCacheManager.s"
+	@echo "... MyParallelServer.o"
+	@echo "... MyParallelServer.i"
+	@echo "... MyParallelServer.s"
 	@echo "... MyTestClientHandler.o"
 	@echo "... MyTestClientHandler.i"
 	@echo "... MyTestClientHandler.s"
 	@echo "... MyserialServer.o"
 	@echo "... MyserialServer.i"
 	@echo "... MyserialServer.s"
+	@echo "... PathInMatrix.o"
+	@echo "... PathInMatrix.i"
+	@echo "... PathInMatrix.s"
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"
