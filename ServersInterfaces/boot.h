@@ -6,18 +6,19 @@
 #define MILESTONE2_BOOT_H
 
 #include <string>
-#include "../MyserialServer.h"
+#include "../MyParallelServer.h"
 #include "../MyTestClientHandler.h"
+#include "../MatrixCLientHandler.h"
 
 namespace boot {
     //template<class P, class S>
     class Main {
     public:
         static void main(int argc, const char *args[]) {
-            int port = 5432; //atoi(args[1]); // 5400
+            int port = 5444; //atoi(args[1]); // 5400
 
-            auto server = MyserialServer();
-            auto *handler = new MyTestClientHandler();
+            auto server = MyParallelServer();
+            auto *handler = new MatrixCLientHandler();
             server.start(port, handler);
         }
     };

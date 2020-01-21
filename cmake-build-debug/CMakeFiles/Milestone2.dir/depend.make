@@ -72,8 +72,9 @@ CMakeFiles/Milestone2.dir/main.cpp.o: ../BestFirstSearch.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../CellMatrix.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../FileCacheManager.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../Matrix.h
+CMakeFiles/Milestone2.dir/main.cpp.o: ../MatrixCLientHandler.h
+CMakeFiles/Milestone2.dir/main.cpp.o: ../MyParallelServer.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../MyTestClientHandler.h
-CMakeFiles/Milestone2.dir/main.cpp.o: ../MyserialServer.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../Searchable.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../Searcher.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../ServersInterfaces/CacheManager.h

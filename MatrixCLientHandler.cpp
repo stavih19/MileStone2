@@ -29,7 +29,7 @@ vector<string> MatrixCLientHandler::handleClient(vector<string> problems) {
     return answer;
 }
 
-vector<string> MatrixCLientHandler::split(std::string str, std::string sep) {
+vector<string> MatrixCLientHandler::split(string str, string sep) {
     char *cstr = const_cast<char *>(str.c_str());
     char *current;
     std::vector<std::string> arr;

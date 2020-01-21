@@ -10,6 +10,16 @@
 using namespace server_side;
 
 class MyParallelServer : public server_side::Server {
+private:
+    bool mainFlag;
+    vector<thread *> threads;
+    int socketServerSaved;
+    sockaddr_in* addressServerSaved;
+    ClientHandler *clientHandlerSaved;
+
+    void startConverstion();
+
+public:
     void start(int port, ClientHandler *c) override;
 
     void stop() override;

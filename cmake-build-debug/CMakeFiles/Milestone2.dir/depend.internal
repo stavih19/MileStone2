@@ -73,8 +73,9 @@ CMakeFiles/Milestone2.dir/main.cpp.o
  /home/stavih19/CLionProjects/Milestone2/CellMatrix.h
  /home/stavih19/CLionProjects/Milestone2/FileCacheManager.h
  /home/stavih19/CLionProjects/Milestone2/Matrix.h
+ /home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.h
+ /home/stavih19/CLionProjects/Milestone2/MyParallelServer.h
  /home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.h
- /home/stavih19/CLionProjects/Milestone2/MyserialServer.h
  /home/stavih19/CLionProjects/Milestone2/Searchable.h
  /home/stavih19/CLionProjects/Milestone2/Searcher.h
  /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/CacheManager.h

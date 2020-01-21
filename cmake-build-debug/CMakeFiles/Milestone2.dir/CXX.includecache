@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/stavih19/CLionProjects/Milestone2/BestFirstSearch.cpp
-BestFirstSearch.h
-/home/stavih19/CLionProjects/Milestone2/BestFirstSearch.h
-
 /home/stavih19/CLionProjects/Milestone2/BestFirstSearch.h
 Searcher.h
 /home/stavih19/CLionProjects/Milestone2/Searcher.h
@@ -32,10 +28,6 @@ State.h
 ServersInterfaces/CacheManager.h
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/CacheManager.h
 
-/home/stavih19/CLionProjects/Milestone2/Matrix.cpp
-Matrix.h
-/home/stavih19/CLionProjects/Milestone2/Matrix.h
-
 /home/stavih19/CLionProjects/Milestone2/Matrix.h
 utility
 -
@@ -43,12 +35,6 @@ Searchable.h
 /home/stavih19/CLionProjects/Milestone2/Searchable.h
 CellMatrix.h
 /home/stavih19/CLionProjects/Milestone2/CellMatrix.h
-
-/home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.cpp
-MatrixCLientHandler.h
-/home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.h
-PathInMatrix.h
-/home/stavih19/CLionProjects/Milestone2/PathInMatrix.h
 
 /home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.h
 ServersInterfaces/ClientHandler.h
@@ -64,10 +50,6 @@ cstring
 string
 -
 
-/home/stavih19/CLionProjects/Milestone2/MyParallelServer.cpp
-MyParallelServer.h
-/home/stavih19/CLionProjects/Milestone2/MyParallelServer.h
-
 /home/stavih19/CLionProjects/Milestone2/MyParallelServer.h
 ServersInterfaces/server_side.h
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/server_side.h
@@ -79,26 +61,6 @@ StringReverser.h
 /home/stavih19/CLionProjects/Milestone2/StringReverser.h
 FileCacheManager.h
 /home/stavih19/CLionProjects/Milestone2/FileCacheManager.h
-
-/home/stavih19/CLionProjects/Milestone2/MyserialServer.h
-ServersInterfaces/server_side.h
-/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/server_side.h
-ServersInterfaces/ClientHandler.h
-/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/ClientHandler.h
-
-/home/stavih19/CLionProjects/Milestone2/PathInMatrix.cpp
-PathInMatrix.h
-/home/stavih19/CLionProjects/Milestone2/PathInMatrix.h
-
-/home/stavih19/CLionProjects/Milestone2/PathInMatrix.h
-ServersInterfaces/Solver.h
-/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/Solver.h
-BestFirstSearch.h
-/home/stavih19/CLionProjects/Milestone2/BestFirstSearch.h
-Matrix.h
-/home/stavih19/CLionProjects/Milestone2/Matrix.h
-CellMatrix.h
-/home/stavih19/CLionProjects/Milestone2/CellMatrix.h
 
 /home/stavih19/CLionProjects/Milestone2/Searchable.h
 string
@@ -141,10 +103,12 @@ string
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/boot.h
 string
 -
-../MyserialServer.h
-/home/stavih19/CLionProjects/Milestone2/MyserialServer.h
+../MyParallelServer.h
+/home/stavih19/CLionProjects/Milestone2/MyParallelServer.h
 ../MyTestClientHandler.h
 /home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.h
+../MatrixCLientHandler.h
+/home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.h
 
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/server_side.h
 string
