@@ -15,8 +15,8 @@ using namespace std;
 //template<class P, class S>
 class ClientHandler {
 protected:
-    CacheManager<string, string> *cacheManager;
-    Solver<string, string> *solver;
+    //CacheManager<string, string> *cacheManager;
+    //Solver<string, string> *solver;
 public:
     virtual vector<string> handleClient(vector<string> problems) = 0;
 };

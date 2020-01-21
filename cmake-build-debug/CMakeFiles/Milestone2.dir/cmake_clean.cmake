@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Milestone2.dir/FileCacheManager.cpp.o"
   "CMakeFiles/Milestone2.dir/Matrix.cpp.o"
   "CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o"
+  "CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.o"
   "CMakeFiles/Milestone2.dir/MyParallelServer.cpp.o"
   "CMakeFiles/Milestone2.dir/MyTestClientHandler.cpp.o"
   "CMakeFiles/Milestone2.dir/MyserialServer.cpp.o"

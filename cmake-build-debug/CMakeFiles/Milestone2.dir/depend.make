@@ -24,6 +24,7 @@ CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../CellMatrix.h
 CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../Matrix.h
 CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../MatrixCLientHandler.cpp
 CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../MatrixCLientHandler.h
+CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../MatrixCacheManager.h
 CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../PathInMatrix.h
 CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../Searchable.h
 CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../Searcher.h
@@ -31,6 +32,14 @@ CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../ServersInterfaces/CacheM
 CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../ServersInterfaces/ClientHandler.h
 CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../ServersInterfaces/Solver.h
 CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.o: ../State.h
+
+CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.o: ../CellMatrix.h
+CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.o: ../Matrix.h
+CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.o: ../MatrixCacheManager.cpp
+CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.o: ../MatrixCacheManager.h
+CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.o: ../Searchable.h
+CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.o: ../ServersInterfaces/CacheManager.h
+CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.o: ../State.h
 
 CMakeFiles/Milestone2.dir/MyParallelServer.cpp.o: ../MyParallelServer.cpp
 CMakeFiles/Milestone2.dir/MyParallelServer.cpp.o: ../MyParallelServer.h
@@ -73,8 +82,11 @@ CMakeFiles/Milestone2.dir/main.cpp.o: ../CellMatrix.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../FileCacheManager.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../Matrix.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../MatrixCLientHandler.h
+CMakeFiles/Milestone2.dir/main.cpp.o: ../MatrixCacheManager.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../MyParallelServer.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../MyTestClientHandler.h
+CMakeFiles/Milestone2.dir/main.cpp.o: ../MyserialServer.h
+CMakeFiles/Milestone2.dir/main.cpp.o: ../PathInMatrix.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../Searchable.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../Searcher.h
 CMakeFiles/Milestone2.dir/main.cpp.o: ../ServersInterfaces/CacheManager.h

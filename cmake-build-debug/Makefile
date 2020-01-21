@@ -231,6 +231,33 @@ MatrixCLientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCLientHandler.cpp.s
 .PHONY : MatrixCLientHandler.cpp.s
 
+MatrixCacheManager.o: MatrixCacheManager.cpp.o
+
+.PHONY : MatrixCacheManager.o
+
+# target to build an object file
+MatrixCacheManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.o
+.PHONY : MatrixCacheManager.cpp.o
+
+MatrixCacheManager.i: MatrixCacheManager.cpp.i
+
+.PHONY : MatrixCacheManager.i
+
+# target to preprocess a source file
+MatrixCacheManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.i
+.PHONY : MatrixCacheManager.cpp.i
+
+MatrixCacheManager.s: MatrixCacheManager.cpp.s
+
+.PHONY : MatrixCacheManager.s
+
+# target to generate assembly for a file
+MatrixCacheManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone2.dir/build.make CMakeFiles/Milestone2.dir/MatrixCacheManager.cpp.s
+.PHONY : MatrixCacheManager.cpp.s
+
 MyParallelServer.o: MyParallelServer.cpp.o
 
 .PHONY : MyParallelServer.o
@@ -414,6 +441,9 @@ help:
 	@echo "... MatrixCLientHandler.o"
 	@echo "... MatrixCLientHandler.i"
 	@echo "... MatrixCLientHandler.s"
+	@echo "... MatrixCacheManager.o"
+	@echo "... MatrixCacheManager.i"
+	@echo "... MatrixCacheManager.s"
 	@echo "... MyParallelServer.o"
 	@echo "... MyParallelServer.i"
 	@echo "... MyParallelServer.s"

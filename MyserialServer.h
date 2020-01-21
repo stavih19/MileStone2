@@ -11,7 +11,7 @@
 using namespace server_side;
 
 //template<class P, class S>
-class MyserialServer : public server_side::Server {
+class MyserialServer : public Server {
 private:
     int mainFlag{};
 

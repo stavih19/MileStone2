@@ -111,6 +111,12 @@
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.h">
 			<Option target="Milestone2"/>
 		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MatrixCacheManager.cpp">
+			<Option target="Milestone2"/>
+		</Unit>
+		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MatrixCacheManager.h">
+			<Option target="Milestone2"/>
+		</Unit>
 		<Unit filename="/home/stavih19/CLionProjects/Milestone2/MyParallelServer.cpp">
 			<Option target="Milestone2"/>
 		</Unit>

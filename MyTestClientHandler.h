@@ -10,6 +10,9 @@
 #include "FileCacheManager.h"
 
 class MyTestClientHandler : public ClientHandler {
+private:
+    FileCacheManager *cacheManager;
+    StringReverser *solver;
 public:
     MyTestClientHandler() {
         cacheManager = new FileCacheManager();

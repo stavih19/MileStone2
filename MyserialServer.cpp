@@ -16,7 +16,7 @@ void MyserialServer::start(int port, ClientHandler *c) {
 
 //template<class P, class S>
 void MyserialServer::stop() {
-    mainFlag = 0;
+    MyserialServer::mainFlag = 0;
 }
 
 //template<class P, class S>

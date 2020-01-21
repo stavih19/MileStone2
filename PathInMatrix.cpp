@@ -24,6 +24,7 @@ string PathInMatrix::convetToDirections(vector<double> answer) {
     for (int i = 1; i < answer.size(); ++i) {
         next = answer.at(i);
         vector += getDir(current, next) + ",";
+        current = next;
     }
 
     vector = vector.substr(0, vector.size() - 1);
@@ -34,10 +35,15 @@ string PathInMatrix::getDir(double source, double dest) {
     string answer;
     int n = matrix->getN();
 
-    if (source - n == dest) { answer = "up"; }
-    else if (source + 1 == dest) { answer = "right"; }
-    else if (source + n == dest) { answer = "down"; }
-    else if (source - 1 == dest) { answer = "left"; }
+    if (source - n == dest) {
+        answer = "up";
+    } else if (source + 1 == dest) {
+        answer = "right";
+    } else if (source + n == dest) {
+        answer = "down";
+    } else if (source - 1 == dest) {
+        answer = "left";
+    }
 
     return answer;
 }

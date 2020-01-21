@@ -6,10 +6,10 @@
 
 vector<double> BestFirstSearch::search(Searchable<double> *searchable) {
     vector<double> answer;
-    list<State<double> *> *successors;
-    list<State<double> *> openList;
-    list<State<double> *> closeHeap;
-    priority_queue<State<double> *, vector<State<double> *>, Comper> pq;
+    list < State < double > * > *successors;
+    list < State < double > * > openList;
+    list < State < double > * > closeHeap;
+    priority_queue < State < double > *, vector < State < double > * >, Comper > pq;
 
     State<double> *n = searchable->getInitialState();
     auto goalState = searchable->getGoalState();
@@ -77,7 +77,7 @@ vector<double> BestFirstSearch::getPath(State<double> *goal) {
 
     // reverse the order
     while (!temp.empty()) {
-        answer.push_back(temp.front()->getState());
+        answer.push_back(temp.back()->getState());
         temp.pop_back();
     }
 

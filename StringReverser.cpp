@@ -13,5 +13,5 @@ string StringReverser::solve(string problem) {
         solution += problem[index - i];
     }
 
-    return (solution + '\n');
+    return solution;
 }

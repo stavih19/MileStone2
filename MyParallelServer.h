@@ -6,18 +6,17 @@
 #define MILESTONE2_MYPARALLELSERVER_H
 
 #include "ServersInterfaces/server_side.h"
+#include <sys/time.h>
 
 using namespace server_side;
 
-class MyParallelServer : public server_side::Server {
+class MyParallelServer : public Server {
 private:
-    bool mainFlag;
     vector<thread *> threads;
-    int socketServerSaved;
-    sockaddr_in* addressServerSaved;
-    ClientHandler *clientHandlerSaved;
 
-    void startConverstion();
+    static void startConverstion(int clientSocket, ClientHandler *clientHandler);
+
+    void openPort(int clientSocket, sockaddr_in address, ClientHandler *clientHandler);
 
 public:
     void start(int port, ClientHandler *c) override;

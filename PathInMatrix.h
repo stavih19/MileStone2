@@ -10,7 +10,7 @@
 #include "Matrix.h"
 #include "CellMatrix.h"
 
-class PathInMatrix : public Solver<Matrix *, string> {
+class PathInMatrix : public Solver<Matrix*, string> {
 private:
     Matrix* matrix{};
 
@@ -19,7 +19,7 @@ private:
     string getDir(double source, double dest);
 
 public:
-    string solve(Matrix *problem) override;
+    string solve(Matrix* problem) override;
 };
 
 

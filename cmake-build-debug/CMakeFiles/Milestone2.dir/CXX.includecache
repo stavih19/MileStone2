@@ -27,6 +27,12 @@ State.h
 /home/stavih19/CLionProjects/Milestone2/FileCacheManager.h
 ServersInterfaces/CacheManager.h
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/CacheManager.h
+fstream
+-
+vector
+-
+cstring
+-
 
 /home/stavih19/CLionProjects/Milestone2/Matrix.h
 utility
@@ -39,20 +45,38 @@ CellMatrix.h
 /home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.h
 ServersInterfaces/ClientHandler.h
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/ClientHandler.h
-vector
-/home/stavih19/CLionProjects/Milestone2/vector
 CellMatrix.h
 /home/stavih19/CLionProjects/Milestone2/CellMatrix.h
 ServersInterfaces/Solver.h
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/Solver.h
+PathInMatrix.h
+/home/stavih19/CLionProjects/Milestone2/PathInMatrix.h
+MatrixCacheManager.h
+/home/stavih19/CLionProjects/Milestone2/MatrixCacheManager.h
+vector
+-
 cstring
 -
 string
 -
 
+/home/stavih19/CLionProjects/Milestone2/MatrixCacheManager.h
+ServersInterfaces/CacheManager.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/CacheManager.h
+Matrix.h
+/home/stavih19/CLionProjects/Milestone2/Matrix.h
+vector
+-
+fstream
+-
+cstring
+-
+
 /home/stavih19/CLionProjects/Milestone2/MyParallelServer.h
 ServersInterfaces/server_side.h
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/server_side.h
+sys/time.h
+-
 
 /home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.h
 ServersInterfaces/ClientHandler.h
@@ -61,6 +85,22 @@ StringReverser.h
 /home/stavih19/CLionProjects/Milestone2/StringReverser.h
 FileCacheManager.h
 /home/stavih19/CLionProjects/Milestone2/FileCacheManager.h
+
+/home/stavih19/CLionProjects/Milestone2/MyserialServer.h
+ServersInterfaces/server_side.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/server_side.h
+ServersInterfaces/ClientHandler.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/ClientHandler.h
+
+/home/stavih19/CLionProjects/Milestone2/PathInMatrix.h
+ServersInterfaces/Solver.h
+/home/stavih19/CLionProjects/Milestone2/ServersInterfaces/Solver.h
+BestFirstSearch.h
+/home/stavih19/CLionProjects/Milestone2/BestFirstSearch.h
+Matrix.h
+/home/stavih19/CLionProjects/Milestone2/Matrix.h
+CellMatrix.h
+/home/stavih19/CLionProjects/Milestone2/CellMatrix.h
 
 /home/stavih19/CLionProjects/Milestone2/Searchable.h
 string
@@ -109,6 +149,10 @@ string
 /home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.h
 ../MatrixCLientHandler.h
 /home/stavih19/CLionProjects/Milestone2/MatrixCLientHandler.h
+../MyserialServer.h
+/home/stavih19/CLionProjects/Milestone2/MyserialServer.h
+../MyTestClientHandler.h
+/home/stavih19/CLionProjects/Milestone2/MyTestClientHandler.h
 
 /home/stavih19/CLionProjects/Milestone2/ServersInterfaces/server_side.h
 string
